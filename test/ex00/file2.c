@@ -1,9 +1,10 @@
 #include <unistd.h>
 
-void ft_print_alphabet(void)
-{ 
-    char c = 'a';
-    (c <= 'z')
+
+void ft_print_numbers(void)
+{
+    int c = '0';
+    while(c <= '9')
     {
         write(1, &c, 1);
         c++;
@@ -12,6 +13,6 @@ void ft_print_alphabet(void)
 
 int main(void)
 {
-    ft_print_alphabet(); 
+    ft_print_numbers();
     return (0);
 }
